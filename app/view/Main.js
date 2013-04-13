@@ -17,41 +17,36 @@ Ext.define('sessionsapp.view.Main', {
             }
         },
         //tabBarPosition: 'bottom',
+        //style: 'background-color: blue; background-image: 0;',
 
-        items: [{
-                xtype: 'navigationview',
-                itemId: 'navView',
-                title: 'Features',
-                style: 'background-color:blue',
-                navigationBar: {
-                    items: [{
-                        xtype: 'button',
-                        action: 'features',
-                        itemId: 'btnFeatures',
-                        text: 'Features',
-                        align: 'right'
-                    },
-                    {
-                        xtype: 'button',
-                        action: 'download',
-                        itemId: 'btnDownload',
-                        text: 'Download',
-                        align: 'right'
-                    },
-                    {
-                        xtype: 'button',
-                        action: 'license',
-                        itemId: 'btnLicense',
-                        text: 'License',
-                        align: 'right'
-                    }]
+        items: [
+            {
+                xtype: 'container',
+                title: 'Sessions',
+                style: 'background-color:white',
+                items: [{
+                    xtype: 'button',
+                    title: 'test',
+                    width: '100px'
+                }]
+            },
+            {
+                xtype: 'container',
+                title: ' ',
+                disabled: true,
+                tab: {
+                    flex: 1
                 }
+            },
+            {
+                xtype: 'container',
+                title: 'Features',
+                style: 'background-color:blue'
             },
             {
                 xtype: 'container',
                 title: 'Download',
                 style: 'background-color:red'
-
             },
             {
                 xtype: 'container',
