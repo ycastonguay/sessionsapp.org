@@ -30,7 +30,8 @@ Ext.application({
     controller: ['Main'],
 
     views: [
-        'Main', 'Home', 'Features'
+        'Main', 'Home', 'Download', 'License', 'Support', 'Blog', 'About',
+        'Features', 'FeatureTimeShifting', 'FeaturePitchShifting', 'FeatureLoopsMarkers', 'FeatureOpenSource', 'FeatureMultiPlatform', 'FeatureFormats'
     ],
 
     icon: {
@@ -71,3 +72,12 @@ Ext.application({
         );
     }
 });
+
+function loadURL(url) {
+    var oRequest = new XMLHttpRequest();
+    oRequest.open('GET', url, false);
+    oRequest.setRequestHeader("User-Agent", navigator.userAgent);
+    oRequest.send(null)
+
+    return oRequest.responseText;
+};

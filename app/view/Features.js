@@ -2,39 +2,22 @@ Ext.define('sessionsapp.view.Features', {
     extend: 'Ext.carousel.Carousel',
     xtype: 'viewFeatures',
     config: {
-        style: 'background-color: #eee; text-align: center;',
-        items: [{
-                xtype: 'container',
-                layout: {
-                    type: 'vbox',
-                    pack: 'center'
-                },
-                items: [{
-                    xtype: 'container',
-                    html: 'Supported formats'
-                }]
+        style: 'text-align: center;',
+        items: [
+            {
+                xtype: 'viewFeatureLoopsMarkers'
             },
             {
-                xtype: 'container',
-                layout: {
-                    type: 'vbox',
-                    pack: 'center'
-                },
-                items: [{
-                    xtype: 'container',
-                    html: 'Markers'
-                }]
+                xtype: 'viewFeatureTimeShifting'
             },
             {
-                xtype: 'container',
-                layout: {
-                    type: 'vbox',
-                    pack: 'center'
-                },
-                items: [{
-                    xtype: 'container',
-                    html: 'Loops'
-                }]
+                xtype: 'viewFeaturePitchShifting'
+            },
+            {
+                xtype: 'viewFeatureFormats'
+            },
+            {
+                xtype: 'viewFeatureMultiPlatform'
             }]
     }
 });

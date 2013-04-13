@@ -16,9 +16,10 @@ Ext.define('sessionsapp.view.Main', {
                 pack: 'end'
             }
         },
-        //tabBarPosition: 'bottom',
-        //style: 'background-color: blue; background-image: 0;',
-
+        showAnimation: {
+            type: 'fadeIn',
+            duration: 200
+        },
         items: [
             {
                 xtype: 'viewHome',
@@ -37,29 +38,24 @@ Ext.define('sessionsapp.view.Main', {
                 title: 'Features'
             },
             {
-                xtype: 'container',
-                title: 'Download',
-                style: 'background-color:red'
+                xtype: 'viewDownload',
+                title: 'Download'
             },
             {
-                xtype: 'container',
-                title: 'License',
-                style: 'background-color:green'
+                xtype: 'viewLicense',
+                title: 'License'
             },
             {
-                xtype: 'container',
-                title: 'Support',
-                style: 'background-color:pink'
+                xtype: 'viewSupport',
+                title: 'Support'
             },
             {
-                xtype: 'container',
-                title: 'Blog',
-                style: 'background-color:brown'
+                xtype: 'viewBlog',
+                title: 'Blog'
             },
             {
-                xtype: 'container',
-                title: 'About',
-                style: 'background-color:yellow'
+                xtype: 'viewAbout',
+                title: 'About'
             }]
     }
 });
