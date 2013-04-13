@@ -1,32 +1,40 @@
 Ext.define('sessionsapp.view.Features', {
-    extend: 'Ext.Container',
-    xtype: 'main',
-//    requires: [
-//        'Ext.TitleBar'
-//    ],
+    extend: 'Ext.carousel.Carousel',
+    xtype: 'viewFeatures',
     config: {
-//        tabBarPosition: 'bottom',
-
+        style: 'background-color: #eee; text-align: center;',
         items: [{
-                xtype: 'button',
-                action: 'features',
-                itemId: 'btnFeatures',
-                text: 'Features',
-                align: 'right'
+                xtype: 'container',
+                layout: {
+                    type: 'vbox',
+                    pack: 'center'
+                },
+                items: [{
+                    xtype: 'container',
+                    html: 'Supported formats'
+                }]
             },
             {
-                xtype: 'button',
-                action: 'download',
-                itemId: 'btnDownload',
-                text: 'Download',
-                align: 'right'
+                xtype: 'container',
+                layout: {
+                    type: 'vbox',
+                    pack: 'center'
+                },
+                items: [{
+                    xtype: 'container',
+                    html: 'Markers'
+                }]
             },
             {
-                xtype: 'button',
-                action: 'license',
-                itemId: 'btnLicense',
-                text: 'License',
-                align: 'right'
+                xtype: 'container',
+                layout: {
+                    type: 'vbox',
+                    pack: 'center'
+                },
+                items: [{
+                    xtype: 'container',
+                    html: 'Loops'
+                }]
             }]
     }
 });

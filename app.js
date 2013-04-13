@@ -30,7 +30,7 @@ Ext.application({
     controller: ['Main'],
 
     views: [
-        'Main', 'Features'
+        'Main', 'Home', 'Features'
     ],
 
     icon: {
