@@ -1,5 +1,5 @@
 Ext.define('sessionsapp.view.Home', {
-    extend: 'Ext.Container',
+    extend: 'Ext.Panel',
     xtype: 'viewHome',
     config: {
         style: 'background-color: #ECF0F1; text-align: center; padding: 16px;',
@@ -14,6 +14,8 @@ Ext.define('sessionsapp.view.Home', {
             },
             {
                 xtype: 'button',
+                action: 'features',
+                itemId: 'btnTour',
                 padding: '8px',
                 width: '200px',
                 style: 'margin-left: auto; margin-right: auto; margin-top: 8px;',

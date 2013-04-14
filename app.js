@@ -27,7 +27,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    controller: ['Main'],
+    controllers: ['Main'],
 
     views: [
         'Main', 'Home', 'Download', 'License', 'Support', 'Blog', 'About',
@@ -77,7 +77,7 @@ function loadURL(url) {
     var oRequest = new XMLHttpRequest();
     oRequest.open('GET', url, false);
     oRequest.setRequestHeader("User-Agent", navigator.userAgent);
-    oRequest.send(null)
+    oRequest.send(null);
 
     return oRequest.responseText;
-};
+}

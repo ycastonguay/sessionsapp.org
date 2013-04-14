@@ -1,9 +1,6 @@
 Ext.define('sessionsapp.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'viewMain',
-    requires: [
-        'Ext.TitleBar'
-    ],
     config: {
         layout: {
             animation: {

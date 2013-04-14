@@ -35,3 +35,13 @@ $font-family: 'Open Sans', sans-serif !important;
 .x-tab-active {
   border-radius: 0 !important;
 }
+
+// Enlarge button height for mobile devices
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 768px)
+{
+  .x-button {
+    height: 44px;
+  }
+}
