@@ -27,10 +27,15 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    controllers: ['Main'],
+    models: ['Section'],
+
+    stores: ['Sections'],
+
+    controllers: ['Main', 'MobileMenuList'],
 
     views: [
         'Main', 'Home', 'Download', 'License', 'Support', 'Blog', 'About',
+        'MobileMenu', 'MobileMenuList',
         'Features', 'FeatureTimeShifting', 'FeaturePitchShifting', 'FeatureLoopsMarkers', 'FeatureOpenSource', 'FeatureMultiPlatform', 'FeatureFormats'
     ],
 

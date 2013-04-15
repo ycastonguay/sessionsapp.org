@@ -1,12 +1,14 @@
 // Custom variables
 $base-color: #465966;
-$active-color: #465966;
+$active-color: lighten($base-color, 10%);
 
 $base-gradient: 'flat';
 $tabs-dark: $base-color; //darken($base-color, 20%);
 $tabs-dark-active-color: $base-color; //saturate($active-color, 20%);
 $button-radius: '0px';
 //$tabs-bottom-active-gradient: 'flat';
+
+$list-pressed-color: lighten($active-color, 25%);
 
 $font-family: 'Open Sans', sans-serif !important;
 
@@ -32,9 +34,9 @@ $font-family: 'Open Sans', sans-serif !important;
 // Your custom code goes here...
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-.x-tab-active {
-  border-radius: 0 !important;
-}
+//.x-tab-active {
+//  border-radius: 0 !important;
+//}
 
 // Enlarge button height for mobile devices
 @media only screen

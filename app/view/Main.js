@@ -2,10 +2,11 @@ Ext.define('sessionsapp.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'viewMain',
     config: {
+        itemId: 'tabs',
         layout: {
             animation: {
                 type: 'slide',
-                direction: 'up'
+                direction: Ext.os.deviceType == 'Phone' ? 'right' : 'up'
             }
         },
         tabBar: {
@@ -32,27 +33,38 @@ Ext.define('sessionsapp.view.Main', {
             },
             {
                 xtype: 'viewFeatures',
-                title: 'Features'
+                title: 'Features',
+                hidden: Ext.os.deviceType == 'Phone' ? true : false
             },
             {
                 xtype: 'viewDownload',
-                title: 'Download'
+                title: 'Download',
+                hidden: Ext.os.deviceType == 'Phone' ? true : false
             },
             {
                 xtype: 'viewLicense',
-                title: 'License'
+                title: 'License',
+                hidden: Ext.os.deviceType == 'Phone' ? true : false
             },
             {
                 xtype: 'viewSupport',
-                title: 'Support'
+                title: 'Support',
+                hidden: Ext.os.deviceType == 'Phone' ? true : false
             },
             {
                 xtype: 'viewBlog',
-                title: 'Blog'
+                title: 'Blog',
+                hidden: Ext.os.deviceType == 'Phone' ? true : false
             },
             {
                 xtype: 'viewAbout',
-                title: 'About'
+                title: 'About',
+                hidden: Ext.os.deviceType == 'Phone' ? true : false
+            },
+            {
+                xtype: 'mobileMenuList',
+                title: 'Menu',
+                hidden: Ext.os.deviceType == 'Phone' ? false : true
             }]
     }
 });

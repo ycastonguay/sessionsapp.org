@@ -14,7 +14,8 @@ Ext.define('sessionsapp.controller.Main', {
                 tap: 'goToDownloadTab'
             },
             mainRef: {
-                activeitemchange: 'itemchange'
+                initialize: 'initView',
+                activeitemchange: 'itemChange'
             }
         },
         refs: {
@@ -25,7 +26,9 @@ Ext.define('sessionsapp.controller.Main', {
     },
     // This allows changing the tab active item without triggering itemchange event
     disableHistory: false,
-    init: function() {
+    initView: function() {
+        console.log('os: ' + Ext.os.deviceType);
+
         // By default, use the viewHome hash
         if(!window.location.hash) {
             window.history.pushState({}, "", "#page/viewHome");
@@ -33,6 +36,7 @@ Ext.define('sessionsapp.controller.Main', {
     },
     skipToPage: function(viewXtype) {
         this.disableHistory = true;
+        console.log('skipping to page ' + viewXtype);
         this.getMainRef().setActiveItem(viewXtype);
         this.disableHistory = false;
     },
@@ -42,7 +46,7 @@ Ext.define('sessionsapp.controller.Main', {
     goToDownloadTab: function() {
         this.getMainRef().setActiveItem(3);
     },
-    itemchange: function(sender, value, oldValue, eOpts) {
+    itemChange: function(sender, value, oldValue, eOpts) {
         // Change page title
         var windowTitle = 'Sessions';
         if(value.xtype != 'viewHome') {
@@ -51,7 +55,7 @@ Ext.define('sessionsapp.controller.Main', {
         document.title = windowTitle;
 
         // Push history state hash
-        if(!this.disableHistory) {
+        if(!this.disableHistory && value.xtype != 'mobileMenuList') {
             window.history.pushState({}, "", "#page/" + value.xtype);
         }
     }
