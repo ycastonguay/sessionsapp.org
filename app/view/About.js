@@ -14,7 +14,7 @@ Ext.define('sessionsapp.view.About', {
                       '<b>BASS audio library</b> is © 1999-2013 Un4seen Developments. <br />' +
                       '<b>BASS.NET audio library</b> is © 2005-2013 Bernd Niedergesäß. <br />' +
                       '<b>FamFamFam icons</b> are © 2009-2013 Mark James. <br /><br />' +
-                      'Web Site Version 2.0.0.0 Alpha (2013-04-12)'
+                      'Web Site Version 2.0.0.0 Alpha (2013-04-15)'
             }]
     }
 });
