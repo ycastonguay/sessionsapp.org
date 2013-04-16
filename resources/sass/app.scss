@@ -10,7 +10,7 @@ $button-radius: '0px';
 
 $list-pressed-color: lighten($active-color, 25%);
 
-$font-family: 'Open Sans', sans-serif !important;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 @import 'sencha-touch/default/all';
 
@@ -31,19 +31,37 @@ $font-family: 'Open Sans', sans-serif !important;
 @include sencha-msgbox;
 @include sencha-loading-spinner;
 
-// Your custom code goes here...
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-//.x-tab-active {
-//  border-radius: 0 !important;
-//}
+// Your custom code goes here...
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.x-tab-active {
+  border-radius: 0 !important;
+}
 
 // Enlarge button height for mobile devices
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 768px)
 {
+  body {
+    font-size: 14px !important;
+  }
   .x-button {
     height: 44px;
   }
 }
+
+@media only screen
+and (min-device-width : 768px)
+{
+  body {
+    //font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px !important;
+  }
+}
+
+

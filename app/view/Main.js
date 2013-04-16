@@ -10,6 +10,7 @@ Ext.define('sessionsapp.view.Main', {
             }
         },
         tabBar: {
+            height: 44,
             layout: {
                 pack: 'end'
             }
