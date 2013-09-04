@@ -1,0 +1,51 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.navBar {
+    background-color: gray;
+    height: 44px;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    height: 44px;
+}
+
+.navItem {
+    display: inline;
+    float: left;
+    background-color: blue;
+}
+
+.navItem a {
+    display: block;
+    padding: 12px;
+}
+
+.page {
+    position: relative;
+    background-color: red;
+    margin: 0;
+    padding: 12px;
+    /*height: 500px;*/
+    height: 100%;
+
+
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    -ms-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out;
+
+    /*transition-property:top;*/
+    /*transition-duration:100ms;*/
+    /*transition-timing-function:linear;*/
+    /*-webkit-transition-property:top;*/
+    /*-webkit-transition-duration:100ms;*/
+    /*-webkit-transition-timing-function:linear;*/
+}
