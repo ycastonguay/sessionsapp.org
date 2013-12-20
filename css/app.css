@@ -60,7 +60,7 @@ html, body {
 }
 
 .title {
-    font-size: 44px;
+    font-size: 40px;
     color: white;
     /*margin-top: 20px;*/
     line-height: 0px;
@@ -69,6 +69,7 @@ html, body {
 .text {
     font-size: 18px;
     color: #DDDDDD;
+    line-height: 24px;
 }
 
 .content {
@@ -107,6 +108,8 @@ html, body {
     color: white;
     font-size: 14px;
     text-decoration: none;
+    border-radius:4px;
+
 }
 
 .button a {
