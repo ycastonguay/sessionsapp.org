@@ -10,4 +10,5 @@ $(document).ready(function(){
 //    });
 
 //    $(".page").html("Hello from app.js");
+//    $("#page1").fadeIn();
 });
