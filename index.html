@@ -4,39 +4,140 @@
 <head>
     <meta charset="utf-8">
     <title>Sessions</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">-->
     <link href="css/app.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>-->
     <script src="js/html5shiv.js"></script>
     <![endif]-->
 </head>
 <body>
-    <div class="navBar">
-        <ul class="nav">
-            <li class="navItem"><a href="#">Sessions</a></li>
-            <li class="navItem"><a href="#about">Features</a></li>
-            <li class="navItem"><a href="#download">Download</a></li>
-            <li class="navItem"><a href="#license">License</a></li>
-            <li class="navItem"><a href="#support">Support</a></li>
-            <li class="navItem"><a href="#blog">Blog</a></li>
-            <li class="navItem"><a href="#about">About</a></li>
-        </ul>
+<div id="skrollr-body">
+    <div class="header" data-0="background-color:rgba(55,55,55,0.6);" data-100p="background-color:rgb(255,0,0,0.0);">
+        <div class="navBar">
+            <ul class="nav">
+                <li class="navItem"><a href="#" data-menu-top="0">Sessions</a></li>
+                <li class="navItemRight"><a href="#about">About</a></li>
+                <li class="navItemRight"><a href="#blog">Blog</a></li>
+                <li class="navItemRight"><a href="#support">Support</a></li>
+                <li class="navItemRight"><a href="#license">License</a></li>
+                <li class="navItemRight" data-100="background-color:rgba(55,55,55,0);" data-200p="background-color:rgb(115,115,115,0.7);">
+                    <a href="#download" data-menu-top="200p">Download</a>
+                </li>
+                <li class="navItemRight" data-0="background-color:rgba(55,55,55,0);" data-200p="background-color:rgb(115,115,115,0.7);" data-300p="background-color:rgb(255,0,255,1);">
+                    <a href="#features" data-menu-top="100p">Features</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="page" id="page1">
-        <p>
-            Hello world!
-        </p>
-    </div>
-    <div class="page" id="page2" style="background-color: green;">
-        <p>
-            Hello world 2!
-        </p>
-    </div>
+    <div class="content" style="background-image:url('img/background3.jpg'); background-size: 100%;">
+        <a name="about"></a>
+        <!--<div class="page" id="page1" style="background-image:url('img/background.jpg'); background-size: 100%;" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,100%);">-->
+        <!--<div class="page" id="page1" data-0="position:static;" data-top="position:static;" >-->
+        <div class="page" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);"></div>
+            <div class="centerContainer">
+                <div class="centerContent">
+                    <p style="font-size: 24px;">
+                        <span style="font-size: 52px; color:white;">Sessions<br/></span>
+                        is a music player designed to help musicians practice their instruments.
+                    </p>
+                    <p style="font-size: 18px;">
+                        It is available for free on desktop, tablet and smartphones (iOS, Android, Mac, Linux and Windows).
+                    </p>
+                    <a href="#download" data-menu-top="200p" class="button">Download Sessions</a>
+                </div>
+            </div>
+        </div>
+        <a name="features"></a>
+        <div class="page" id="page2" style="background-image:url('img/background.jpg'); background-size: 100%;" data-_box-100p="" data-_box-200p="">
+            <div class="box" data-100p="width:0%;" data-_box-100p="width:100%"></div>
+            <!--<div class="centerContainer">-->
+                <!--<div class="centerContent">-->
+                    <!--<p style="font-size: 18px;">-->
+                        <!--<span style="font-size: 44px; color:white;">Features<br/></span>-->
+                    <!--</p>-->
+                    <!--<p style="font-size: 18px;">-->
+                        <!--<b>Loops and Markers</b> allow you to practice any part of a song, making your practice session much more efficient. That way, you can keep your hands on your instruments.-->
+                    <!--</p>-->
+                    <!--<p style="font-size: 18px;">-->
+                        <!--<b>Time Shifting</b> makes it easier to pick up complex rythmic sections or practice a song at a slower or higher tempo. You can slow down or speed up audio from 50% up to 150%.-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <!--<div class="page" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-_box-100p="" data-_box-200p="transform:translate(0,-100%)">-->
+            <!--<div class="box" data-200p="width:0%;" data-_box-200p="width:100%">ZE BOX</div>-->
+        <!--</div>-->
+        <!--<div class="page" data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%);">-->
+            <!--<p>-->
+                <!--They somehow managed to get every creep and freak in the universe onto this one plane. And then somehow managed to let them take it over. </br>-->
+            <!--</p>-->
 
+        <!--</div>-->
+        <a name="download"></a>
+        <!--<div class="page" id="page3" style="background-image:url('img/background2.jpg'); background-size: 100%;">-->
+        <div class="page" data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%);">
+            <div class="centerContainer">
+                <div class="centerContent">
+                    <p style="font-size: 18px;">
+                        <span style="font-size: 44px; color:white;">Download<br/></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--<a name="license"></a>-->
+        <!--<div class="page" id="page3" style="background-image:url('img/background3.jpg'); background-size: 100%;">-->
+            <!--<div class="centerContainer">-->
+                <!--<div class="centerContent">-->
+                    <!--<p style="font-size: 18px;">-->
+                        <!--<span style="font-size: 44px; color:white;">License<br/></span>-->
+                    <!--</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
 <!-- Load JS faster by putting them at the bottom of the page-->
 <script src="js/jquery.js"></script>
+<script src="js/skrollr.min.js"></script>
+<script src="js/skrollr.menu.min.js"></script>
+<script type="text/javascript">
+    var s = skrollr.init({
+        constants: {
+            //fill the box for a "duration" of 150% of the viewport (pause for 150%)
+            //adjust for shorter/longer pause
+            box: 100
+        }
+    });
+    //The options (second parameter) are all optional. The values shown are the default values.
+    skrollr.menu.init(s, {
+        //skrollr will smoothly animate to the new position using `animateTo`.
+        animate: true,
+
+        //The easing function to use.
+        easing: 'sqrt',
+
+        //Multiply your data-[offset] values so they match those set in skrollr.init
+        scale: 2,
+
+        //How long the animation should take in ms.
+        duration: function(currentTop, targetTop) {
+            //By default, the duration is hardcoded at 500ms.
+            return 500;
+
+            //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+            //return Math.abs(currentTop - targetTop) * 10;
+        }//,
+
+        //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+        //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+//        handleLink: function(link) {
+//            return 50;//Hardcoding 400 doesn't make much sense.
+//        }
+    });
+</script>
 <script src="js/app.js"></script>
+</div>
 </body>
 </html>
