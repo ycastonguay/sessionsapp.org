@@ -128,3 +128,13 @@ html, body {
     background-color: limegreen;
     opacity: 0;
 }
+
+#page4 {
+    background-color: blueviolet;
+    opacity: 0;
+}
+
+#page5 {
+    background-color: darkred;
+    opacity: 0;
+}
