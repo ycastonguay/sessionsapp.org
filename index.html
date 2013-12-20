@@ -52,13 +52,17 @@
             </div>
         </div>
         <a name="features"></a>
-        <div class="page" id="page2" data-0="transform:translate(0,100%); opacity:0.0;" data-100p="transform:translate(0,0%); opacity:1.0;" data-_box-100p="" data-_box-200p="transform:translate(0,-100%); opacity:0.0;">
-            <div class="box" data-100p="width:0%;" data-_box-100p="width:100%">
-                <div class="centerContent" data-100p="opacity:0.0;" data-_box-100p="opacity:1.0;">
+        <div class="page" id="page2" data-0="transform:translate(0,100%); opacity:0.0;" data-100p="transform:translate(0,0%); opacity:1.0;" data-_box-300p="" data-_box-400p="transform:translate(0,-100%); opacity:0.0;">
+            <div class="box" data-100p="width:0%; opacity:0.0;" data-_box-100p="width:100%; opacity:1.0;" data-_box-200p="opacity:0.0;">
+                <div class="centerContent" data-100p="opacity:0.0;" data-_box-100p="opacity:1.0;" data-_box-200p="opacity:0.0;">
                     <p style="font-size: 18px; margin-top: 80px;">
                         <b>Loops and Markers</b> allow you to practice any part of a song, making your practice session much more efficient. That way, you can keep your hands on your instruments.
                     </p>
-                    <p style="font-size: 18px;">
+                </div>
+            </div>
+            <div class="box" data-_box-100p="width:0%;" data-_box-200p="width:100%">
+                <div class="centerContent" data-_box-100p="opacity:0.0;" data-_box-200p="opacity:1.0;">
+                    <p style="font-size: 18px; margin-top: 80px;">
                         <b>Time Shifting</b> makes it easier to pick up complex rythmic sections or practice a song at a slower or higher tempo. You can slow down or speed up audio from 50% up to 150%.
                     </p>
                 </div>
@@ -66,11 +70,18 @@
             <div class="centerContent">
                 <p style="font-size: 18px;">
                     <span style="font-size: 44px; color:white;">Features<br/></span>
+                    <!-- Features title should change to Loops & Markers, Time Shifting, and so on depending on the page. fade in/out title -->
+                    <!-- Alternate layout a little bit between feature pages. i.e. screenshot on devices on top on page 1, on right on page 2, etc. Animate a bit like the iPad Air microsite (i.e. screenshots stay visible a bit longer than text). -->
+                    <!-- Add carousel dots at the bottom of the Features pages -->
+                    <!-- Change background image (fade in/out) for each section. but the background image stays fixed in the background, it never scrolls. -->
+                    <!-- Maybe the first quick page of the features can be a summary of the sections to follow -->
+                    <!-- When displaying Loops and Markers in big title, display FEATURES in caps much smaller (a la Metro MS) -->
+                    <!-- If scrollbar is on top after 30 seconds, maybe add a animation to let the user know that he/she can scroll? -->
                 </p>
             </div>
         </div>
         <a name="download"></a>
-        <div class="page" id="page3" data-_box-100p="transform:translate(0,100%); opacity:0.0;" data-_box-200p="transform:translate(0,0%); opacity:1.0;">
+        <div class="page" id="page3" data-_box-300p="transform:translate(0,100%); opacity:0.0;" data-_box-400p="transform:translate(0,0%); opacity:1.0;">
             <div class="centerContent">
                 <p style="font-size: 18px;">
                     <span style="font-size: 44px; color:white;">Download<br/></span>
@@ -78,7 +89,7 @@
             </div>
         </div>
         <a name="license"></a>
-        <div class="page" id="page4" data-_box-200p="transform:translate(0,100%); opacity:0.0;" data-_box-300p="transform:translate(0,0%); opacity:1.0;">
+        <div class="page" id="page4" data-_box-400p="transform:translate(0,100%); opacity:0.0;" data-_box-500p="transform:translate(0,0%); opacity:1.0;">
             <div class="centerContent">
                 <p style="font-size: 18px;">
                     <span style="font-size: 44px; color:white;">License<br/></span>
@@ -86,7 +97,7 @@
             </div>
         </div>
         <a name="support"></a>
-        <div class="page" id="page5" data-_box-300p="transform:translate(0,100%); opacity:0.0;" data-_box-400p="transform:translate(0,0%); opacity:1.0;">
+        <div class="page" id="page5" data-_box-500p="transform:translate(0,100%); opacity:0.0;" data-_box-600p="transform:translate(0,0%); opacity:1.0;">
             <div class="centerContent">
                 <p style="font-size: 18px;">
                     <span style="font-size: 44px; color:white;">Support<br/></span>
@@ -103,7 +114,7 @@
         constants: {
             //fill the box for a "duration" of 150% of the viewport (pause for 150%)
             //adjust for shorter/longer pause
-            box: 100
+            box: 200
         }
     });
     //The options (second parameter) are all optional. The values shown are the default values.
@@ -124,6 +135,6 @@
         }
     });
 </script>
-<script src="js/app.js"></script>
+<!--<script src="js/app.js"></script>-->
 </body>
 </html>
